@@ -1,10 +1,12 @@
 import "./styles.css";
+import { PrimaryButton } from "./components/atom/button/PrimaryButton";
 
 export default function App() {
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+      <PrimaryButton>これはボタンです</PrimaryButton>
+      <br />
+      <PrimaryButton>こちらもボタンです</PrimaryButton>
     </div>
   );
 }
