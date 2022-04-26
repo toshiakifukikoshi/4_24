@@ -12,6 +12,6 @@ export const SecondaryButton = (props) => {
 };
 
 const SButton = styled(BaseButton)`
-  background-color: #fff;
-  color: pink;
+  background-color: yellow;
+  color: green;
 `;

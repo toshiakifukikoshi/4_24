@@ -1,12 +1,30 @@
-// import styled from "styled-components";
+import styled from "styled-components";
 import { PrimaryButton } from "../atom/button/PrimaryButton";
-import { Input } from "../atom/imput/Input";
+// import { Input } from "../atom/imput/Input";
 
-export const SearchInput = () => {
+export const SearchInput = (props) => {
+  const { placeholder = "" } = props;
   return (
-    <>
-      <Input />
-      <PrimaryButton>検索</PrimaryButton>
-    </>
+    <SContainer>
+      <SInput type="text" placeholder={placeholder} />
+      <SButtonWrapper>
+        <PrimaryButton>検索</PrimaryButton>
+      </SButtonWrapper>
+    </SContainer>
   );
 };
+
+const SInput = styled.input`
+  padding: 8px 16px;
+  border: solid #ddd 1px;
+  border-radius: 999px;
+  outline: none;
+`;
+const SContainer = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+const SButtonWrapper = styled.div`
+  padding-left: 8px;
+`;
