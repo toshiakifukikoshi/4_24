@@ -1,9 +1,11 @@
 import styled from "styled-components";
 import { PrimaryButton } from "../atom/button/PrimaryButton";
-// import { Input } from "../atom/imput/Input";
+import { Input } from "../atom/input/Input";
 
 export const SearchInput = (props) => {
-  const { placeholder = "" } = props;
+  console.log(props);
+  const { placeholder } = props;
+  console.log(placeholder);
   return (
     <SContainer>
       <SInput type="text" placeholder={placeholder} />
