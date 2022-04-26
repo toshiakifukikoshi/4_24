@@ -7,10 +7,9 @@ export const BaseButton = styled.button`
   border: none;
   outline: none;
   border-radius: 99px;
-  transition: all 0.8s;
+
   &:hover {
     cursor: pointer;
     opacity: 0.8;
-    transform: translateY(-5px) scale(1.1);
   }
 `;

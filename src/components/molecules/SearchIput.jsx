@@ -1,8 +1,9 @@
+import React, { memo } from "react";
 import styled from "styled-components";
 import { PrimaryButton } from "../atom/button/PrimaryButton";
-import { Input } from "../atom/input/Input";
 
-export const SearchInput = (props) => {
+export const SearchInput = memo((props) => {
+  console.log("SearchInput");
   console.log(props);
   const { placeholder } = props;
   console.log(placeholder);
@@ -14,7 +15,7 @@ export const SearchInput = (props) => {
       </SButtonWrapper>
     </SContainer>
   );
-};
+});
 
 const SInput = styled.input`
   padding: 8px 16px;
